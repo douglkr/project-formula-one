@@ -111,7 +111,8 @@ As mentioned earlier, this project also allows you to run the pipeline through a
 Pipeline run results are sent to Slack for easy monitoring:
 
 <!-- ![images/dagster-slack-log.png](images/dagster-slack-log.png) -->
-<image src="images/dagster-slack-log.png" width="400">
+<image src="images/dagster-slack-log.png" width="500">
+
 **Figure 8**: Dagster Slack log message
 
 **Important notes**:
