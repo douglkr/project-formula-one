@@ -109,6 +109,7 @@ As mentioned earlier, this project also allows you to run the pipeline through a
 **Figure 7**: Dagster asset job
 
 Pipeline run results are sent to Slack for easy monitoring:
+
 ![images/dagster-slack-log.png](images/dagster-slack-log.png)
 **Figure 8**: Dagster Slack log message
 
