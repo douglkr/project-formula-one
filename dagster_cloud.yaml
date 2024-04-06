@@ -1,4 +1,4 @@
 locations:
 - code_source:
-    package_name: analytics
-  location_name: analytics
+    package_name: formula-one-pipeline
+  location_name: dagster
