@@ -106,12 +106,11 @@ Example of Dagster auto-materialize assets feature:
 
 As mentioned earlier, this project also allows you to run the pipeline through asset jobs:
 ![images/dagster-asset-job.png](images/dagster-asset-job.png)
-**Figure 6**: Dagster asset job
+**Figure 7**: Dagster asset job
 
 Pipeline run results are sent to Slack for easy monitoring:
-<img src="images/dagster-slack-log.png" width=400>
-
-**Figure 7**: Dagster Slack log message
+![images/dagster-slack-log.png](images/dagster-slack-log.png)
+**Figure 8**: Dagster Slack log message
 
 **Important notes**:
 1. Airbyte provides an official integration with Dagster (see [here](https://docs.airbyte.com/operator-guides/using-dagster-integration#:~:text=Airbyte%20is%20an%20official%20integration,project%20can%20be%20found%20here.)). However, at the time of this project, Auto-materialize asset is not working for Airbyte integration. See this [GitHub issue](https://github.com/dagster-io/dagster/issues/18266). For this reason, a custom asset was created for Airbyte, although an official integration was already provided.
@@ -126,7 +125,7 @@ A Preset Dashboard was created to help F1 enthusiasts answer the questions descr
 4. Circuit: relies information about race locations and most dangerous circuits
 
 ![images/preset-dashboard.png](images/preset-dashboard.png)
-**Figure 8**: Preset Dashboard
+**Figure 9**: Preset Dashboard
 
 <!-- ![images/preset-overview.png](images/preset-overview.png)
 **Figure 7**: Preset Dashboard - Overview tab
