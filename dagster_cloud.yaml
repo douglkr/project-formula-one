@@ -1,0 +1,4 @@
+locations:
+- code_source:
+    package_name: analytics
+  location_name: analytics
