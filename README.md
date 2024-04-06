@@ -1,6 +1,7 @@
 # formula-one-project
 
 [![linter](https://github.com/douglkr/project-formula-one/actions/workflows/pylint.yml/badge.svg)](https://github.com/douglkr/project-formula-one/actions/workflows/pylint.yml)
+[![Serverless Prod Deployment](https://github.com/douglkr/project-formula-one/actions/workflows/deploy.yml/badge.svg)](https://github.com/douglkr/project-formula-one/actions/workflows/deploy.yml)
 
 ## Table of Contents
 - [Introduction](#introduction)
