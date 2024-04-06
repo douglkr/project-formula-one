@@ -130,18 +130,6 @@ A Preset Dashboard was created to help F1 enthusiasts answer the questions descr
 ![images/preset-dashboard.png](images/preset-dashboard.png)
 **Figure 9**: Preset Dashboard
 
-<!-- ![images/preset-overview.png](images/preset-overview.png)
-**Figure 7**: Preset Dashboard - Overview tab
-
-![images/preset-driver.png](images/preset-driver.png)
-**Figure 8**: Preset Dashboard - Driver tab
-
-![images/preset-constructor.png](images/preset-constructor.png)
-**Figure 9**: Preset Dashboard - Constructor tab
-
-![images/preset-circuit.png](images/preset-circuit.png)
-**Figure 10**: Preset Dashboard - Circuit tab -->
-
 
 ## CI/CD
 GitHub Actions is used to trigger CI/CD pipeline:
@@ -149,5 +137,3 @@ GitHub Actions is used to trigger CI/CD pipeline:
     - linter workflow is responsible for flagging improperly formatted SQL and Python code
     - Serveless branch deployment is responsible for creating staging environments of the Dagster code, right in Dagster Cloud. For every push to a branch in the git repository, Dagster Cloud will create a unique deployment, allowing you to preview the changes in the branch in real-time. For more information, visit the [docs](https://docs.dagster.io/dagster-cloud/managing-deployments/branch-deployments)
 - Continuous Deployment (CD): responsible for deploying to Dagster cloud. Pushing to the main branch will deploy to prod Serverless deployment
-
-
