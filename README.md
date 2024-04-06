@@ -106,11 +106,14 @@ Example of Dagster auto-materialize assets feature:
 
 As mentioned earlier, this project also allows you to run the pipeline through asset jobs:
 ![images/dagster-asset-job.png](images/dagster-asset-job.png)
-**Figure 6**: Dagster asset job
+**Figure 7**: Dagster asset job
 
 Pipeline run results are sent to Slack for easy monitoring:
-![images/dagster-slack-log.png](images/dagster-slack-log.png)
-**Figure 6**: Dagster Slack log message
+
+<!-- ![images/dagster-slack-log.png](images/dagster-slack-log.png) -->
+<image src="images/dagster-slack-log.png" width="500">
+
+**Figure 8**: Dagster Slack log message
 
 **Important notes**:
 1. Airbyte provides an official integration with Dagster (see [here](https://docs.airbyte.com/operator-guides/using-dagster-integration#:~:text=Airbyte%20is%20an%20official%20integration,project%20can%20be%20found%20here.)). However, at the time of this project, Auto-materialize asset is not working for Airbyte integration. See this [GitHub issue](https://github.com/dagster-io/dagster/issues/18266). For this reason, a custom asset was created for Airbyte, although an official integration was already provided.
@@ -124,17 +127,8 @@ A Preset Dashboard was created to help F1 enthusiasts answer the questions descr
 3. Constructor: provides information about champion constructors, constructors points and constructors classification per season
 4. Circuit: relies information about race locations and most dangerous circuits
 
-![images/preset-overview.png](images/preset-overview.png)
-**Figure 7**: Preset Dashboard - Overview tab
-
-![images/preset-driver.png](images/preset-driver.png)
-**Figure 8**: Preset Dashboard - Driver tab
-
-![images/preset-constructor.png](images/preset-constructor.png)
-**Figure 9**: Preset Dashboard - Constructor tab
-
-![images/preset-circuit.png](images/preset-circuit.png)
-**Figure 10**: Preset Dashboard - Circuit tab
+![images/preset-dashboard.png](images/preset-dashboard.png)
+**Figure 9**: Preset Dashboard
 
 
 ## CI/CD
@@ -143,5 +137,3 @@ GitHub Actions is used to trigger CI/CD pipeline:
     - linter workflow is responsible for flagging improperly formatted SQL and Python code
     - Serveless branch deployment is responsible for creating staging environments of the Dagster code, right in Dagster Cloud. For every push to a branch in the git repository, Dagster Cloud will create a unique deployment, allowing you to preview the changes in the branch in real-time. For more information, visit the [docs](https://docs.dagster.io/dagster-cloud/managing-deployments/branch-deployments)
 - Continuous Deployment (CD): responsible for deploying to Dagster cloud. Pushing to the main branch will deploy to prod Serverless deployment
-
-
