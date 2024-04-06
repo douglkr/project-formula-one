@@ -117,7 +117,7 @@ Pipeline run results are sent to Slack for easy monitoring:
 
 ### Serving
 A Preset Dashboard was created to help F1 enthusiasts answer the questions described in the [Introduction](#introduction) section. The Dashboard includes 4 tabs:
-1. Overview: describes the purpose of the dashboard and the data feeding it.
+1. Overview: describes the purpose of the dashboard and the data feeding it
 2. Driver: provides information about champion drivers, driver points and drivers classification per season
 3. Constructor: provides information about champion constructors, constructors points and constructors classification per season
 4. Circuit: relies information about race locations and most dangerous circuits
