@@ -1,4 +1,4 @@
 locations:
 - code_source:
-    package_name: formula-one-pipeline
+    package_name: dagster_project
   location_name: dagster_project
