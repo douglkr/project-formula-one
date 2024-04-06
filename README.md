@@ -1,6 +1,6 @@
 # formula-one-project
 
-CI: [![linter](https://github.com/douglkr/project-formula-one/actions/workflows/pylint.yml/badge.svg)](https://github.com/douglkr/project-formula-one/actions/workflows/pylint.yml)
+[![linter](https://github.com/douglkr/project-formula-one/actions/workflows/pylint.yml/badge.svg)](https://github.com/douglkr/project-formula-one/actions/workflows/pylint.yml)
 
 ## Table of Contents
 - [Introduction](#introduction)
