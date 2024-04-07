@@ -133,9 +133,9 @@ A Preset Dashboard was created to help F1 enthusiasts answer the questions descr
 
 ## CI/CD
 GitHub Actions is used to trigger CI/CD pipeline:
-- linter workflow is responsible for flagging improperly formatted SQL and Python code
+- Linter workflow is responsible for flagging improperly formatted SQL and Python code
 - Serveless branch deployment is responsible for creating staging environments of the Dagster code, right in Dagster Cloud. For every push to a branch in the git repository, Dagster Cloud will create a unique deployment, allowing you to preview the changes in the branch in real-time. For more information, visit the [docs](https://docs.dagster.io/dagster-cloud/managing-deployments/branch-deployments)
-- responsible for deploying to Dagster cloud. Pushing to the main branch will deploy to prod Serverless deployment
+- Serveless prod deployment is responsible for deploying to Dagster cloud. Pushing to the main branch will deploy to prod Serverless deployment
 
 ![images/ci-cd-workflows.png](images/ci-cd-workflows.png)
 **Figure 10**: Example of CI/CD workflows
