@@ -138,4 +138,4 @@ GitHub Actions is used to trigger CI/CD pipeline:
 - Serveless prod deployment is responsible for deploying to Dagster cloud. Pushing to the main branch will deploy to prod Serverless deployment
 
 ![images/ci-cd-workflows.png](images/ci-cd-workflows.png)
-**Figure 10**: Example of CI/CD workflows
+**Figure 10**: Example of CI/CD workflow runs
