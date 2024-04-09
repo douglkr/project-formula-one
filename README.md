@@ -15,6 +15,7 @@
     - [Orchestration](#orchestration)
     - [Serving](#serving)
 - [CI/CD](#cicd)
+- [Notes on Security](#notes-on-security)
 
 
 ## Introduction
@@ -139,3 +140,11 @@ GitHub Actions is used to trigger CI/CD pipeline:
 
 ![images/ci-cd-workflows.png](images/ci-cd-workflows.png)
 **Figure 10**: Example of CI/CD workflow runs
+
+
+## Notes on Security
+1. When setting up your EC2 instance, be sure to configure your VPC security group to:
+    - Expose only the necessary ports. Typically this is port `22` (for SSH), `443` (for HTTPS), and `8000` and `8006` for Airbyte
+    - Whistelist only IPs that need to interact with your EC2 instance. This usually means your IP address and Dagster cloud IPs (if you use it as an orchestrator). You can check Dagster cloud IP addresses [here](https://docs.dagster.io/dagster-cloud/deployment/serverless#whitelisting-dagsters-ip-addresses)
+2. When setting up your RDS instance, be sure to configure your VPC security group to:
+    - Whitelist only IPs that need to interact with your RDS instance. This usually means your IP address and EC2 instance (so that Airbyte can interact with your RDS instance). You can allow your EC2 instance to connect to your RDS instance by adding the EC2 security group as a source in the RDS security group inbound rules
