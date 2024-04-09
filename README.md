@@ -81,7 +81,7 @@ The Gold layer can be represented by the following Entity Relationship Diagram (
 ![images/erd.png](images/erd.png)
 **Figure 3**: Gold layer - Entity Relationship Diagram (ERD)
 
-In the Gold layer, there was also created a one big table (OBT) to feed the Preset Dashboard.
+At the Gold tier, a one big table (OBT) was also created to feed the Preset Dashboard. At the time of this project, Preset does not support table relationships (like Tableau and Power BI do), which is why a one big table (OBT) was created.
 
 
 ### Orchestration
